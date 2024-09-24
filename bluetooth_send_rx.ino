@@ -24,14 +24,6 @@ void loop() {
   Serial.print("Received via Bluetooth: ");  // Print to serial monitor
   Serial.println(incomingChar);
 }
-/*else if (Serial.available())
-{
-   char outgoingChar = Serial.read(); // Read from serial monitor
-    SerialBT.write(outgoingChar); // Send the data to the phone via Bluetooth
-   Serial.print("Sent via Bluetooth: "); 
-    Serial.println(outgoingChar);
-}*/
-
 else
 {
   int touchValue = touchRead(TOUCH_PIN);
